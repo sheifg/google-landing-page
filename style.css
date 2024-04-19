@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+/* Header styling */
+.header {
+    padding: 1rem 2rem 3rem;  /* 14px 28px 42px // relative to the root (body)*/
+}
+
+.header__left {
+    float: left;
+    margin: 0.5rem;
+}
+
+.header__right {
+    float: right;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+    font-size: 13px;
+    padding: 0.5rem;
+}
+
+a.image-link:hover {
+    text-decoration: none;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+.image-link {
+    font-size: 20px;
+}
+
+.header__right--appicon {
+    opacity: 0.6;
+    vertical-align: middle;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header__right--appicon:hover {
+    opacity: 1;
+}
+
+.header__right--btn {
+    color: white;
+    background-color: #4285f4;
+    border: none;
+    height: 35px;  
+    width: 100px; 
+    border-radius: 3px;
+    font-weight: bold;
+    /* It is necessary to use display: inline-block, because <a> is an inline element and it is not allowed to set height and width on the element */
+    display: inline-block;
+    text-align: center;
+}
+
+.header__right--btn:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Main section */
+.main__logo {
+    width: 272px;
+    height: 92px;  
+    display: block;
+    margin: 25vh auto 0;
+}
+
+.main__search-bar {
+    height: 50px;
+    width: 580px; 
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    margin: 28px auto;
+}
+
+.main__search-bar:hover {
+    box-shadow: 0px 1px 6px rgba(33, 33, 35, 0.2);
+}
+
+.main__search-bar--magnify {
+    margin-left: 15px;
+    margin-top: 15px; 
+    opacity: 0.5;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.main__search-bar--input {
+    height: 35px;  
+    width: 450px;  
+    font-size: 1rem;
+    border: none;
+    /* To remove the outline of the input */
+    outline: none;
+}
+
+.main__search-bar--mic, 
+.main__search-bar--lens {
+    width: auto;
+    height: 24px;
+    padding-top: 5px;
+}
+
+.main__search-bar--lens{
+    padding-left: 10px;
+}
+
+.main__buttons,
+.main__other {
+    text-align: center;
+}
+
+.main__buttons--left,
+.main__buttons--right {
+    border: none;
+    background-color: #f8f9fa;
+    padding: 0 1rem;
+    border-radius: 4px;
+    height: 36px;
+    margin: 11px 4px;
+    color: #3c4043;
+}
+
+.main__buttons--left:hover,
+.main__buttons--right:hover {
+    border: 1px solid #cbccce;
+    cursor: pointer;
+}
+
+p.main__other {
+    margin-top: 1rem;
+    font-size: 13px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #e1e1e1;
+    padding: 10px;
+}
+
+.footer ul a {
+    font-size: 14px;
+}
+
+.footer__left {
+    float: left;
+}
+
+.footer__right {
+    float: right;
+}
