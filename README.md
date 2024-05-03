@@ -2,7 +2,7 @@
 
 ### **Project Description:**
 
-Project aims to create a copy og google landing page.
+This project aims to create a copy og google landing page.
 
 ### *Project Objectives:*
 
